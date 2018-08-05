@@ -42,3 +42,11 @@ if space == " "
     end
   end
 end
+
+def draw?(board)
+  board.each do |spot|
+
+    if won?(board)
+      return false
+    end
+end
