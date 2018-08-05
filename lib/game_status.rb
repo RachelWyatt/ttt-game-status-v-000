@@ -69,4 +69,3 @@ def winner?(board)
     return "X has won the game"
   end
 end
-end
