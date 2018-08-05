@@ -51,3 +51,12 @@ def draw?(board)
     end
   end
 end
+
+def over?(board)
+  board.each do |space|
+
+    if draw?(board) || full?(board) || won?(board)
+      return true
+    end
+  end
+end
