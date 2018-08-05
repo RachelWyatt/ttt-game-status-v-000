@@ -40,4 +40,5 @@ def full?(board)
     if space == "X" || space == "O"
       return true
     end
+  end
 end
