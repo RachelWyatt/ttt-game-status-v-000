@@ -57,9 +57,12 @@ def over?(board)
 
     if draw?(board) || full?(board) || won?(board)
       return true
+    else
+      return false
     end
   end
 end
+
 
 def winner(board)
   board.each do |space|
