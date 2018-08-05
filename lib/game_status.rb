@@ -64,7 +64,7 @@ end
 
 def winner(board)
   board.each do |space|
-  if won?(board) && position_1 == "X"
+  if won?(board) && position_taken? == "X"
     return "X"
   elsif won?(board) && space == "O"
     return "O"
