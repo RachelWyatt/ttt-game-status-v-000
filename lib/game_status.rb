@@ -63,9 +63,4 @@ def over?(board)
 end
 
 def winner?(board)
-  board.each.do |space|
-
-  if won?(board)
-    return "X has won the game"
-  end
 end
