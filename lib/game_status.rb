@@ -25,12 +25,10 @@ def won?(board)
   position_2 = board[win_index_2] # load the value of the board at win_index_2
   position_3 = board[win_index_3] # load the value of the board at win_index_3
 
-  if position_1 == "X" && position_2 == "X" && position_3 == "X" && position_taken?(board, position_1)
+  if position_1 == "X" && position_2 == "X" && position_3 == "X" && position_taken?(board, win_index_1)
      return combination # return the win_combination indexes that won.
    elseif position_1 == "O" && position_2 == "O" && position_3 == "O" && position_taken?(board, win_index_1)
       return combination
-    else
-      return false
    end
 end
 end
