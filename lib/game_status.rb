@@ -38,7 +38,7 @@ def full?(board)
   board.each do |space|
 
     if space == "X" || space == "O"
-      return false
+      return true
     end
   end
 end
