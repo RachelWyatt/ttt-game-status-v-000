@@ -33,3 +33,11 @@ def won?(board)
 end
 return false
 end
+
+def full?(board)
+  board.each do |space|
+
+    if space == "X" || space == "O"
+      return true
+    end
+end
