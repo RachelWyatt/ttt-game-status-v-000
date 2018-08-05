@@ -63,5 +63,9 @@ def over?(board)
 end
 
 def winner(board)
-  puts "Placeholder"
+  board.each do |space|
+  if won?(board) && space == "X"
+    return "X"
+  end
+end
 end
